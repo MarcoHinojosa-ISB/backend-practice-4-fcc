@@ -11,59 +11,42 @@
 }
 
 h1{
-  padding-bottom: 10px;
-  border-bottom: 2px solid gray;
-  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5px;
 }
 form{
-  position: relative;
-  height: 40px;
-  width: 100%;
-  margin-bottom: 30px;
-
+  padding-top: 20px;
+  box-shadow: 0px -5px 10px -8px black;
+  font-size: 0px;
 }
 form select{
-  height: 100%;
-  width: 50px;
-  border: 1px solid black;
-  
+  margin-right: 5px;
+  font-size: 15px;
 }
-form input{
-  font-size: 18px;
+form input[type="text"]{
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+form input[type="submit"]{
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 0px 5px 5px 0px;
+  
   background-color: white;
-  border: 1px solid black;
-  height: 100%;
 }
-#srch{
-  position: relative;
-  width: 400px;
-  left: 1px;
-  padding-left: 10px;
-  border-right: none;
-  border-radius: 10px 0px 0px 10px;
-}
-#submit{
-  height: 100%;
-  position: absolute;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 0px 10px 10px 0px;
-  
-  box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-}
-#history{
-  padding: 5px;
-  background-color: #ffffff;
-}
-form input:focus{
-  outline: none;
-}
-#submit:hover, #history:hover{
-  background-color: #f9f9f9;  
-}
-#submit:focus, #history:focus{
-  background-color: #f5f5f5;  
+form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: #f9f9f9;
 }
 
+#history{
+  margin-top: 5px;
+  padding: 3px;
+  border: 1px solid black;
+  background-color: #fefefe;
+}
+#history:hover{
+  cursor: pointer;
+  background-color: #f9f9f9;
+}

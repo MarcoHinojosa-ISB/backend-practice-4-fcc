@@ -7,7 +7,7 @@
 $(document).ready(function(){
   
   $('form').on('submit', function(e){
-    let qString = $("#srch").val().trim();
+    let qString = $("#search-bar").val().trim();
     let offset = $("#num").val();
   
     window.location.href += 'search/'+qString+'?offset='+offset;
@@ -15,8 +15,8 @@ $(document).ready(function(){
     e.preventDefault() 
   })
 
+  
   $('#history').on('click', function(e){
     window.location.href += 'history';
   })
-  
 });
